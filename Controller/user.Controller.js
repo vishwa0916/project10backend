@@ -131,13 +131,13 @@ export const resetPassword = async (req, res) => {
     const mailTransporter = createTransport({
       service: "gmail",
       auth: {
-        user: "tcsujin99@gmail.com",
+        user: "kannanvishwa881@gmail.com",
         pass: process.env.apppaassword,
       },
     });
 
     const message = {
-      from: "tcsujin99@gmail.com",
+      from: "kannanvishwa881@gmail.com",
       to: emailid,
       subject: "PASSWORD RESET MAIL",
       text: `reset token>>>>    ${resetToken}`,
